@@ -1,0 +1,47 @@
+
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  datasource:
+    password: cymark1425
+    url: jdbc:postgresql://localhost:8060/registration
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ogbodouchenna1425@gmail.com
+    password: jzwrrvakclsrrjvm
+
+    properties:
+      mail:
+        smtp:
+#          ssl:
+#            trust:
+          auth: true
+          starttls:
+            enable: true
+#          connectiontimeout: 5000
+#          timeout: 3000
+#          writetimeout: 5000
+
+
+
+
+#  spring.mail.host=smtp.gmail.com
+#  spring.mail.port=587
+#  spring.mail.username=<login user to smtp server>
+#  spring.mail.password=<login password to smtp server>
+#  spring.mail.properties.mail.smtp.auth=true
+#  spring.mail.properties.mail.smtp.starttls.enable=true

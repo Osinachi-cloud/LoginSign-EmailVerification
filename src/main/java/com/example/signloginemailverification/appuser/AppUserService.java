@@ -59,7 +59,7 @@ public class  AppUserService implements UserDetailsService {
                 LocalDateTime.now(),
                 LocalDateTime.now().plusMinutes(15),
                 appUser
-        );
+        ); //0763656016
 
         confirmationTokenService.saveConfirmationToken(
                 confirmationToken);
